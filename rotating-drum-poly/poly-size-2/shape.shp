@@ -1,0 +1,67 @@
+
+<
+name POLYR0
+radius 0.05
+preCompDone y
+volume 0.166667
+I/m 0.05 0.05 0.05
+obb.extent 0.5 0.5 0.5
+obb.center 0 0 0
+obb.e1 1 0 0
+obb.e2 0 1 0
+obb.e3 0 0 1
+OBBtreeLevel 0
+position 0 0 0
+orientation 1 0 0 0
+MCnstep 10000
+nv 6
+-0.45 0 -3.19744e-15
+0.45 0 -3.19744e-15
+0 0.45 -3.19744e-15
+0 -0.45 -3.19744e-15
+0 0 0.45
+0 0 -0.45
+ne 12
+0 2
+0 3
+0 4
+0 5
+1 2
+1 3
+1 4
+1 5
+2 4
+2 5
+3 4
+3 5
+nf 8
+3 4 2 0
+3 4 2 1
+3 5 2 0
+3 5 2 1
+3 3 4 1
+3 3 4 0
+3 3 5 0
+3 3 5 1
+>
+
+<
+name SpherePOLYR0
+radius 0.5
+preCompDone y
+volume 0.523599
+I/m 0.1 0.1 0.1
+obb.extent 0.5 0.5 0.5
+obb.center 0 0 0
+obb.e1 1 0 0
+obb.e2 0 1 0
+obb.e3 0 0 1
+OBBtreeLevel 0
+position 0 0 0
+orientation 1 0 0 0
+MCnstep 10000
+nv 1
+0 0 0
+ne 0
+nf 0
+>
