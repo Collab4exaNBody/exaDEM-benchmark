@@ -22,7 +22,7 @@ setup_drivers:
 compute_force:
   - gravity_force:
      gravity: [0,0,-0.00981]
-  - hooke_polyhedron:
+  - contact_polyhedron:
      symetric: true
      config: { rcut: 0.0 m , dncut: 0.0 m, kn: 100000, kt: 80000, kr: 0.0, fc: 0.0, mu: 0.4, damp_rate: 0.9} 
      config_driver: { rcut: 0.0 m , dncut: 0.0 m, kn: 100000, kt: 80000, kr: 0.0, fc: 0.0, mu: 0.4, damp_rate: 0.9} 
@@ -37,8 +37,8 @@ write_vtklegacy:
 
 global:
   simulation_dump_frequency: -1
-  simulation_end_iteration: 380501000
-  simulation_log_frequency: 1000
+  simulation_end_iteration: 380510000
+  simulation_log_frequency: 10000
   simulation_paraview_frequency: -1
   dt: 0.00002 s 
   rcut_inc: 0.025 m

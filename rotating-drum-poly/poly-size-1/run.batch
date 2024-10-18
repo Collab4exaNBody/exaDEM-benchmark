@@ -1,12 +1,12 @@
 #!/bin/bash
-#MSUB -r exaDEM-GPU-poly2
+#MSUB -r exaDEM-GPU-poly1
 #MSUB -n 1
 #MSUB -c 32
-#MSUB -T 120000
+#MSUB -T 12000
 #MSUB -o exadem_run_%I.o
 #MSUB -e exadem_run_%I.e
 #MSUB -q a100
 
 set -x
 export OMP_NUM_THREADS=32
-ccc_mprun ../exaDEM run.msp --omp_num_threads 32
+ccc_mprun ../../../cuda/exaDEM run.msp --omp_num_threads 32
