@@ -2,7 +2,7 @@
 
 ### Topaze
 
-This bench runs on NVidia A 100 GPU. [a100]
+These benchs run on NVidia A 100 GPU. [a100]
 
 #### V1.01
 
