@@ -4,7 +4,7 @@
 
 These benchs run on NVidia A 100 GPU. [a100]
 
-#### V1.01
+#### V1.0.1
 
 
 Case poly 1 [10k particles, 10k timesteps]
