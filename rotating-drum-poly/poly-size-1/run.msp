@@ -14,10 +14,8 @@ input_data:
 setup_drivers:
   - add_cylinder:
      id: 0
-     center: [20, 3, 20]
-     axis: [1, 0, 1]
-     radius: 20
-     angular_velocity: [0,0.015,0]
+     state: {center: [20, 3, 20], axis: [1, 0, 1], radius: 20, vrot: [0,0.015,0]}
+     params: {motion_type: STATIONARY}
 
 compute_force:
   - gravity_force:

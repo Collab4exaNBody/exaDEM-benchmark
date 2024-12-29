@@ -28,8 +28,10 @@ input_data:
 setup_drivers:
   - add_cylinder:
      id: 0
-     state: {center: [40, 6, 40], axis: [1, 0, 1], radius: 40, vrot: [0,0.015,0]}
-     params: {motion_type: STATIONARY}
+     center: [40, 6, 40]
+     axis: [1, 0, 1]
+     radius: 40
+     angular_velocity: [0,0.015,0]
 
 compute_force:
   - gravity_force:
@@ -43,6 +45,9 @@ domain:
   cell_size: 3.0 m
   periodic: [false,true,false]
 
+write_vtklegacy:
+  ascii: true
+  ghost: false
 
 global:
   simulation_dump_frequency: -1

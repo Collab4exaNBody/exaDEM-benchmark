@@ -3,33 +3,21 @@ grid_flavor: grid_flavor_dem
 includes:
   - config_polyhedra.msp
 
-init_new_particles:
-  - density_from_shape:
-     density: 0.012
-  - set_rand_velocity:
-     region: AREA
-     var: 0.001
-     mean: [0.0,0.0,-1.3]
-  - inertia_from_shape
-  - set_quaternion:
-     random: true
-     region: AREA
-  - radius_from_shape:
-     region: AREA
-
 input_data:
   - read_shape_file:
      filename: shape.shp
   - read_dump_particle_interaction:
-     filename: exadem_0270000000.dump
+     filename: exaDEM_380500000.dump
      expandable: true
   - radius_from_shape
 
 setup_drivers:
   - add_cylinder:
      id: 0
-     state: {center: [40, 6, 40], axis: [1, 0, 1], radius: 40, vrot: [0,0.015,0]}
-     params: {motion_type: STATIONARY}
+     center: [20, 3, 20]
+     axis: [1, 0, 1]
+     radius: 20
+     angular_velocity: [0,0.015,0]
 
 compute_force:
   - gravity_force:
@@ -43,10 +31,13 @@ domain:
   cell_size: 3.0 m
   periodic: [false,true,false]
 
+write_vtklegacy:
+  ascii: true
+  ghost: false
 
 global:
   simulation_dump_frequency: -1
-  simulation_end_iteration: 270010000
+  simulation_end_iteration: 380510000
   simulation_log_frequency: 10000
   simulation_paraview_frequency: -1
   dt: 0.00002 s 
