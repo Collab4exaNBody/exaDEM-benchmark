@@ -26,7 +26,7 @@ input_data:
   - radius_from_shape
 
 setup_drivers:
-  - add_cylinder:
+  - register_cylinder:
      id: 0
      state: {center: [40, 6, 40], axis: [1, 0, 1], radius: 40, vrot: [0,0.015,0]}
      params: {motion_type: STATIONARY}
