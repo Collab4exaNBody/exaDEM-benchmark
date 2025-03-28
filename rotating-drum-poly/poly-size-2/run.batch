@@ -5,6 +5,7 @@
 #MSUB -T 12000
 #MSUB -o exadem_run_%I.o
 #MSUB -e exadem_run_%I.e
+#MSUB -m scratch
 #MSUB -q a100
 
 set -x

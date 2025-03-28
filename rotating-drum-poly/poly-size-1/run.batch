@@ -9,4 +9,4 @@
 
 set -x
 export OMP_NUM_THREADS=32
-ccc_mprun ../../../cuda/exaDEM run.msp --omp_num_threads 32
+ccc_mprun ../../../CUDA/exaDEM run.msp --omp_num_threads 32
